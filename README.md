@@ -1,7 +1,7 @@
 
 # DateFormatter()
 
-**DateFormatter()**는 클래스이다 때문에 반드시 인스턴스를 만들고 사용하여야한다!!!
+DateFormatter()는 클래스이다 때문에 반드시 인스턴스를 만들고 사용하여야한다!!!
 
 DateFormatter를 사용하면 보다 자유롭게 문자나 날짜를 변환하고 형식을 바꿀 수 있다.
 
