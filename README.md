@@ -1,8 +1,34 @@
 
-# 오토레이아웃
+# DateFormatter()
 
-오토레이아웃이란 간단하게 화면의 비율을 알아서 조정해주는 기능이라고 보면 된다.
+**DateFormatter()**는 클래스이다 때문에 반드시 인스턴스를 만들고 사용하여야한다!!!
 
-이게 필요한 이유는 아이폰의 화면 크기는 기종마다 다 다르기 때문에 크기를 하나로 설정하면 화면이 잘리는 현상이 발생하게 된다. 다음과 같이 말이다.
+DateFormatter를 사용하면 보다 자유롭게 문자나 날짜를 변환하고 형식을 바꿀 수 있다.
 
-<img src = "./Users/idong-gi/Desktop/스크린샷 2022-07-12 오전 12.37.59.png" width="600" height="400">
+``` swift
+let formatter = DateFormatter()
+
+// 날짜형식, 문자형식 변환
+formatter.date(from: String)
+formatter.String(date: date)
+
+// 날짜 형태 변환
+formatter.dateFormat = "yyyy년 MM월 dd일"
+
+```
+
+
+
+# #available구문
+
+```swift
+@available(iOS 14.0, *)
+
+#available(iOS 13.0, *)
+```
+
+iOS 13.0과 14.0으로 넘어가면서 Scene Delegate가 생겼다. 그러므로 하위 버전에선 SceneDelegate의 사용이 불필요하게 되는데 이 때 사용하는 구문이 available 구문이다.
+
+@available은 함수나 클래스의 블록 위에 사용하면 구문이 작동한다.
+
+#available은 조건문에 사용이 가능하다. 이를 사용해 버젼마다 datePicker의 스타일을 조정했다.
